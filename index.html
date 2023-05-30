@@ -60,10 +60,46 @@
 Independence Ave. Kalevala Project, Victoria, Seychelles
 </h3>
 		
-		<audio controls>
-  <source src="assets/West.mp3" type="audio/mpeg">
+
+		<audio controls id="music">
+
+<source src="assets/West.mp3" type="audio/mpeg">
+
 Your browser does not support the audio element.
+
 </audio>
+
+ 
+
+<p>Click the buttons to play or pause the music.</p>
+
+ 
+
+<button onclick="play()" type="button">Play </button>
+
+<button onclick="pause()" type="button">Pause</button>
+
+ 
+
+<script>
+
+var myMusic= document.getElementById("music");
+
+function play() {
+
+myMusic.play();
+
+}
+
+ 
+
+function pause() {
+
+myMusic.pause();
+
+}
+
+</script>
 
 
 				
